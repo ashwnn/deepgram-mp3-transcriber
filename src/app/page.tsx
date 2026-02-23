@@ -148,7 +148,9 @@ export default function Home() {
           "Authorization": `Token ${currentSettings.apiKey}`,
           "Content-Type": file.type || "audio/mp3",
         },
-        body: file,
+        // @ts-expect-error - 'duplex' is a newer fetch option required for streaming bodies
+        duplex: "half",
+        body: file.stream(),
       });
 
       if (!response.ok) {

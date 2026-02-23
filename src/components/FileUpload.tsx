@@ -81,7 +81,7 @@ export function FileUpload({ onFilesSelected, disabled }: FileUploadProps) {
 
             <h3 className="text-base font-semibold text-black tracking-tight mb-1">Click to upload MP3</h3>
             <p className="text-sm text-[#71717a]">
-                Maximum file size: 25MB
+                Maximum file size: 100MB
             </p>
         </div>
     );
