@@ -4,8 +4,8 @@ const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: isProd ? "/deepgram-mp3-transcriber" : "",
-  assetPrefix: isProd ? "/deepgram-mp3-transcriber/" : "",
+  basePath: isProd ? "/deepgram-transcriber" : "",
+  assetPrefix: isProd ? "/deepgram-transcriber/" : "",
   images: {
     unoptimized: true
   }
